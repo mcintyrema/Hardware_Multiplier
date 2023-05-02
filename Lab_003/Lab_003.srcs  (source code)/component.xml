@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>TopLevel</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>Rst</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Rst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>Clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">Rst</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>TopLevel</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_processing_system7_5_5__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_SHREC_SHREC_axi_regmap_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_xilinx_com_ip_proc_sys_reset_5_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>561eeb25</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>TopLevel</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_processing_system7_5_5__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_SHREC_SHREC_axi_regmap_1_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_proc_sys_reset_5_0__ref_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>c8767642</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>97e217d4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>A</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>B</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Rst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Done</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>R</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">63</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>BITS</spirit:name>
+        <spirit:displayName>Bits</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.BITS">64</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/constrs_1/imports/Downloads/PYNQ-Z1_C.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/imports/new/splitter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_processing_system7_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/bd/design_1/ip/design_1_axi_regmap_0_0/design_1_axi_regmap_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_regmap_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_rst_ps7_0_100M</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/ControlUnit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/ShiftReg_32.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/ShiftReg_64.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/counter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/flipflop_64.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/fulladder.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/TopLevel.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_1b7026b4</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_processing_system7_5_5__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="processing_system7" xilinx:version="5.5">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_SHREC_SHREC_axi_regmap_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="SHREC" xilinx:library="SHREC" xilinx:name="axi_regmap" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_xilinx_com_ip_proc_sys_reset_5_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="proc_sys_reset" xilinx:version="5.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/imports/new/splitter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_processing_system7_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/bd/design_1/ip/design_1_axi_regmap_0_0/design_1_axi_regmap_0_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_axi_regmap_0</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xci</spirit:name>
+        <spirit:userFileType>xci</spirit:userFileType>
+        <spirit:userFileType>CELL_NAME_rst_ps7_0_100M</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/ControlUnit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/ShiftReg_32.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/ShiftReg_64.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/counter.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/flipflop_64.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/fulladder.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../../../../Users/kenzm/FPGA/Lab_003/Lab_003.srcs/sources_1/new/TopLevel.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_processing_system7_5_5__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="processing_system7" xilinx:version="5.5">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_SHREC_SHREC_axi_regmap_1_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="SHREC" xilinx:library="SHREC" xilinx:name="axi_regmap" xilinx:version="1.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_xilinx_com_ip_proc_sys_reset_5_0__ref_view_fileset</spirit:name>
+      <spirit:vendorExtensions>
+        <xilinx:subCoreRef>
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="proc_sys_reset" xilinx:version="5.0">
+            <xilinx:mode xilinx:name="create_mode"/>
+          </xilinx:componentRef>
+        </xilinx:subCoreRef>
+      </spirit:vendorExtensions>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/TopLevel_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_97e217d4</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>TopLevel_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>BITS</spirit:name>
+      <spirit:displayName>Bits</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.BITS">64</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">TopLevel_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">virtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qvirtex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qartix7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">spartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">aspartan7</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexu</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">virtexuplusHBM</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexuplus</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">kintexu</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>TopLevel_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-02-20T16:42:42Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d11f435_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38277079_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77d18307_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6553cfc4_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42cb6580_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9dd0b82_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30c2cf6a_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d8b061_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22673c84_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bd6943b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@224b420_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5a3922_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@427a3db_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ed7279b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77390307_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e36ee9d_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54dc624d_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bcf45ad_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ec5402_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59877d4a_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a3e9e85_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@622fef3e_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74e5dbf3_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50521a04_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@102dd6_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27df75af_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58240747_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ba1d696_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4631eacd_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43335f3b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f2ee6cc_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6538a1c9_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23f611c8_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d14fbeb_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@620b5d93_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@464dcd5f_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@698765c8_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38a34d59_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6512135c_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@309f9a9d_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7692607e_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a615afc_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74efbc6d_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43ef5e9b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62192b27_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3002ffa6_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29c68019_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42fa505c_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2281b06a_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@763882f9_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34f64914_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cc7d77f_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78fef7c2_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d64fecb_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b7857b9_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52150d95_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cb782d4_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bd905bc_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e648d_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1011ebd_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@10410f4e_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e746024_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@702de66c_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@259c8efb_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7483669d_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35810533_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71b05b9e_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63b2df78_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bc2af47_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f39a6bc_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4095b87b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@efe1307_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37d9df40_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f34f878_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68ddcc5_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27238c1b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a04e1b2_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c7faffd_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62a543b4_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47047c80_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@418bdfc7_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71314606_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eba2ca2_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@672b4e9a_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16e7dff4_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a4371df_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78ae13ea_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30d92b8b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58a8251b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b3120f4_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76f193a4_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c86a626_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70433256_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47128f68_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17a5ac9b_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ae80466_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43945328_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c26e320_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b476c02_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a4b6fcb_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41f81cc3_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d447b0c_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d7b60df_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50ce521f_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44e3afd2_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@407e2cd9_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6acdeffa_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ebcc61d_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72e8edd6_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@162cec9e_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79a684d5_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@677775b9_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d7efd67_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56831701_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b4c9891_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@489543c_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d58138f_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@684cd8e6_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1053edbd_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62deab82_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c87eef5_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4897c890_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@554ce068_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f83099f_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24de3fe5_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a36af35_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@148cbecc_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d2aa115_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70e72514_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c1501dd_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11d48d97_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e5fd78c_ARCHIVE_LOCATION">c:/users/kenzm/fpga/lab_003/lab_003.srcs</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="dc0007de"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7e996f49"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="969a4f15"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="c25e3d42"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="3c5a3474"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
